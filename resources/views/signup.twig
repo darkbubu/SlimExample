@@ -1,0 +1,32 @@
+{%extends 'templates/app.twig'%}
+
+{%block content%}
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">Sign Up</div>
+                <div class="panel-body">
+                    <form action="{{path_for('signup')}}" method="post">
+                        <div class="form-group {{ errors.name ? 'has-error':''}}">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" value="{{persist.name? persist.name:''}}" class="form-control"/>
+                            <span class="help-block">{{errors.name ? errors.name|first:'' }}</span>
+                        </div>
+                        <div class="form-group {{ errors.email ? 'has-error':''}}">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="form-control" value="{{persist.email? persist.email:''}}" placeholder ="info@yourdomain.com"/>
+                        <span class="help-block">{{errors.email ? errors.email|first:''}}</span>
+                        </div>
+                        <div class="form-group {{ errors.password ? 'has-error':''}}">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" value="{{persist.password? persist.password:''}}" class="form-control"/>
+                            <span class="help-block">{{errors.password ? errors.password|first:''}}</span>
+                        </div>
+                                                <button type="submit" class="btn btn-defalut">Sign Up</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
