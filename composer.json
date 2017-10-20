@@ -1,8 +1,7 @@
 {
     "name": "rainier-araujo/slim-example",
     "description": "A coding example of slim framework",
-       "minimum-stability": "dev",
-
+   
     "require": {
         "slim/slim": "^3.8":"dev",
         "slim/twig-view": "^2.3":"dev",
