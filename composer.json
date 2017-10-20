@@ -4,10 +4,10 @@
        "minimum-stability": "dev",
 
     "require": {
-        "slim/slim": "^3.8",
-        "slim/twig-view": "^2.3",
-        "illuminate/database": "^5.5",
-        "respect/validation": "^1.1"
+        "slim/slim": "^3.8":"dev",
+        "slim/twig-view": "^2.3":"dev",
+        "illuminate/database": "^5.5":"dev",
+        "respect/validation": "^1.1":"dev"
     },
     "autoload":{
         "psr-4":{
